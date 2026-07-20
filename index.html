@@ -202,7 +202,7 @@
                 <a class="bookmark-link color-1"
                     href="javascript:(function(){window.isHiddenSuppressedFilterON=!window.isHiddenSuppressedFilterON;const headers=Array.from(document.querySelectorAll('#association-header')).filter(el=>el.textContent&&el.textContent.toLowerCase().includes('hidden from site'));if(headers.length===0){alert('Không tìm thấy khu vực Hidden from Site nào!');return;}headers.forEach(header=>{const toggleDiv=header.closest('div[id^=&quot;CollapseToggle&quot;]');if(!toggleDiv)return;const panelId=toggleDiv.getAttribute('aria-controls');const hiddenPanel=document.getElementById(panelId);if(!hiddenPanel)return;const items=hiddenPanel.querySelectorAll('div[data-test-id^=&quot;asset-&quot;][data-test-id*=&quot;-status-&quot;]');items.forEach(item=>{const hasSuppressedBadge=item.querySelector('[data-test-id^=&quot;suppressed-badge-&quot;]');if(window.isHiddenSuppressedFilterON){if(!hasSuppressedBadge){item.style.display='none';}}else{item.style.display='';}});});})();">
                     Lọc Ảnh Suppressed
-                    <p>Bật/tắt chế độ chỉ hiển thị các ảnh có nhãn "Suppressed" trong khu vực Hidden</p>
+                    <p>Filter ảnh bị suppressed trong Hidden on Site</p>
                 </a>
             </div>
         </div>
